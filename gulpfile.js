@@ -5,11 +5,11 @@ var gulp = require('gulp'),
 
 
 gulp.task('sass', function() {
-	return gulp.src('stylesheets/sass/*.scss')
-		.pipe(watch('stylesheets/sass/*.scss'))
+	return gulp.src('public/stylesheets/sass/*.scss')
+		.pipe(watch('public/stylesheets/sass/*.scss'))
 		.pipe(sass())
 		.pipe(minifycss())
-		.pipe(gulp.dest('stylesheets/css'));
+		.pipe(gulp.dest('public/stylesheets/css'));
 });
 
 

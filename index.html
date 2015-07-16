@@ -10,18 +10,18 @@
 	<link rel="stylesheet" href="public/stylesheets/css/style.css" type="text/css">
 
 </head>
-<body ng-app="buttonClicksApp">
+<body>
 
 	<div class="container" ng-controller="mainController">
-		<h1>How Many Times Has This Button Been Clicked?</h1>
+		<h1 class="message">How Many Times Has This Button Been Clicked?</h1>
 
-		<h3 class="count"></h3>
-		<a class="btn btn-primary the-btn">Click Me</a>
+		<h3 class="count">Loading...</h3>
+		<a class="btn btn-success the-btn">Click Me</a>
 	</div>
 
-
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script src="public/js/script.js"></script>
 	<script src="https://cdn.socket.io/socket.io-1.3.5.js"></script>
+	<script src="public/js/script.js"></script>
+
 </body>
 </html>

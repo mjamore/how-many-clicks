@@ -1,21 +1,20 @@
-var socket;
-
 (function() {
 	$(function() {
 
-		console.log('jQuery is working');
-		socket = io.connect('http://localhost:8080');
+		var socket = io.connect('http://localhost:8080');
 
-		socket.on('MyEvent', function(message) {
-			console.log(message);
+		// When the 'new-client-connection' event happens, set the count on the page
+		socket.on('new-client-connection', function(data) {
+			$('.count').text(data.count);
 		});
 
+		// When the button is clicked, emit the 'btn-clicked' event
 		$('.the-btn').on('click', function() {
 			socket.emit('btn-clicked');
 		});
 
+		// When the 'count-updated' event happens, update the count on the page
 		socket.on('count-updated', function(data) {
-			console.log(data);
 			$('.count').text(data.count);
 		});
 		

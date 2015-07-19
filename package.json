@@ -1,5 +1,5 @@
 {
-  "name": "How Many Button Clicks",
+  "name": "How-Many-Button-Clicks",
   "version": "0.0.1",
   "description": "Simple Node.js app that uses Socket IO to display how many times a button has been clicked.",
   "author": "Michael Amore <michael.amore@yahoo.com>",

@@ -3,20 +3,23 @@
 <head>
 	<meta charset="utf-8">
 	<title>How Many Times Has This Button Been Clicked?</title>
-	<meta name="description" content="">
+	<meta name="description" content="Simple Node.js project that uses real-time server to client communication via Socket.io to display how many times a button has been clicked.">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 	<link rel="stylesheet" href="public/stylesheets/css/style.css" type="text/css">
 
 </head>
 <body>
 
-	<div class="container" ng-controller="mainController">
+	<div class="container">
 		<h1 class="message">How Many Times Has This Button Been Clicked?</h1>
 
 		<h3 class="count">Loading...</h3>
 		<a class="btn btn-success the-btn">Click Me</a>
+
+		<p>This project is built using <a href="https://nodejs.org/" target="_blank">Node.js</a> and <a href="http://socket.io/" target="_blank">Socket.io</a> to enable real-time server to client communication.</p>
+
+		<p>Check it out - open this page in multiple browser windows and notice how all clients update the count when any client clicks the button.</p>
 	</div>
 
 	<script src="https://cdn.socket.io/socket.io-1.3.5.js"></script>

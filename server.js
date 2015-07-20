@@ -11,7 +11,7 @@ server.listen(8080);
 
 
 // Setup routing for static assets
-app.use(express.static('public'));
+app.use('/public', express.static('public'));
 
 
 // Express routes
